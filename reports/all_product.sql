@@ -1,8 +1,6 @@
 rem Final Project - Prototype System
-set echo on
 set linesize 150
 set pagesize 66
-spool c:/cprg250/RA_AllProductsReport/RA_AllProductsReport.txt
 
 
 
@@ -27,5 +25,3 @@ Select product_number as "Product#",
 from tim_product
 	join Tim_Category USING(CATEGORY_NUMBER)
 ORDER BY product_number;
-
-spool off

@@ -1,11 +1,9 @@
 rem Timber populate data 
 rem
 
-set echo on
 set linesize 150
 set pagesize 66
 
-spool c:/cprg250s/timberpopulatedata.txt
 
 --delete the children tables in order
 DELETE tim_customer_review;
@@ -213,9 +211,6 @@ insert into tim_customer_review values (7, 3, TO_DATE('2023-07-05', 'YYYY-MM-DD'
 insert into tim_customer_review values (8, 5, TO_DATE('2023-08-10', 'YYYY-MM-DD'), 'Amazing product!', 3, 1);
 insert into tim_customer_review values (9, 1, TO_DATE('2023-09-15', 'YYYY-MM-DD'), 'Terrible experience.', 4, 2);
 insert into tim_customer_review values (10, 4, TO_DATE('2023-10-20', 'YYYY-MM-DD'), 'Satisfied with the purchase.', 5, 3);
-
-
-spool off
 
 
 

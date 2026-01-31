@@ -1,9 +1,6 @@
 rem Final Project - Prototype System
-set echo on
 set linesize 150
 set pagesize 66
-spool c:/cprg250/RA_SuppliersReport/RA_SuppliersReport.txt
-
 
 -- Report: Suppliers Report
 -- Description: This report will display all suppliers and the products they provide
@@ -24,5 +21,3 @@ from TIM_SUPPLIER
 	JOIN tim_Product USING(Product_Number)
 order by name;
 clear breaks
-
-spool off

@@ -1,5 +1,4 @@
-SET echo ON
-spool c:/cprg250s/Projectcreatetable.txt
+
 
 DROP TABLE tim_customer_review CASCADE CONSTRAINTS;
 DROP TABLE tim_order_product CASCADE CONSTRAINTS;
@@ -140,4 +139,3 @@ CREATE TABLE tim_customer_review
 	CONSTRAINT sys_tim_customer_review_Customer_Number_fk2 FOREIGN KEY (Customer_number)
 		REFERENCES tim_customer (Customer_number)
 );
-spool OFF
